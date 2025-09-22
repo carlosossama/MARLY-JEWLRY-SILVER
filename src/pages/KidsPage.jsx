@@ -10,7 +10,7 @@ const kidsCategories = {
   silver: [
     { name: 'سلسله', image: "/images/kids-silver-chain.jpg" },
     { name: 'خاتم', image: "/images/kids-silver-ring.jpg" },
-    { name: 'اسواره', image: "/images/kids-silver-bracelet.jpg" },
+    { name: 'اسواره', image: "/images/kidsilverbraclet.jpg" },
   ],
 };
 

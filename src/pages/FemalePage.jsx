@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 
 const femaleCategories = {
   gold: [
-    { name: 'حلق', image: "/images/female-gold-earring.jpg" },
-    { name: 'كوليه', image: "/images/female-gold-necklace.jpg" },
-    { name: 'سلسله', image: "/images/female-gold-chain.jpg" },
-    { name: 'خاتم', image: "/images/female-gold-ring.jpg" },
-    { name: 'اسوره', image: "/images/female-gold-bracelet.jpg" },
-    { name: 'خلخال', image: "/images/female-gold-anklet.jpg" },
+    { name: 'حلق', image: "/images/goldear.jpg" },
+    { name: 'كوليه', image: "/images/goldpendenant.jpg" },
+    { name: 'سلسله', image: "/images/goldnecklace.jpg" },
+    { name: 'خاتم', image: "/images/goldring.jpg" },
+    { name: 'اسوره', image: "/images/goldenpraclet.jpg" },
+    { name: 'خلخال', image: "/images/goldenanklet.jpg" },
   ],
   silver: [
-    { name: 'حلق', image: "/images/female-silver-earring.jpg" },
+    { name: 'حلق', image: "/images/silverear.jpg" },
     { name: 'كوليه', image: "/images/female-silver-necklace.jpg" },
-    { name: 'سلسله', image: "/images/female-silver-chain.jpg" },
-    { name: 'خاتم', image: "/images/female-silver-ring.jpg" },
-    { name: 'اسوره', image: "/images/female-silver-bracelet.jpg" },
+    { name: 'سلسله', image: "/images/silverselsela.jpg" },
+    { name: 'خاتم', image: "/images/silverring.jpg" },
+    { name: 'اسوره', image: "/images/silverbraclet.jpg" },
     { name: 'خلخال', image: "/images/female-silver-anklet.jpg" },
   ],
 };
