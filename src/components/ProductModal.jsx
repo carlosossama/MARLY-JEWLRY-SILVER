@@ -1,21 +1,13 @@
 // src/components/ProductModal.jsx
-import React, { useEffect } from "react";
+import React from "react";
 
 function ProductModal({ product, onClose }) {
-  // Prevent background scrolling when modal is open
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, []);
-
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50 px-4">
-      <div className="bg-white rounded-xl p-6 max-w-sm w-full relative text-black shadow-lg overflow-y-auto max-h-[90vh]">
+    <div className="fixed inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex items-center justify-center z-50">
+      <div className="bg-white rounded-2xl p-6 sm:p-8 max-w-sm sm:max-w-md md:max-w-2xl w-full relative text-black shadow-2xl transform scale-95 opacity-0 animate-modalFadeIn">
         {/* Close Button */}
         <button
-          className="absolute top-2 right-2 text-2xl text-gray-600 hover:text-black"
+          className="absolute top-3 right-3 text-2xl text-gray-600 hover:text-black"
           onClick={onClose}
         >
           ×
@@ -25,14 +17,19 @@ function ProductModal({ product, onClose }) {
         <img
           src={product.image}
           alt={product.name}
-          loading="lazy"
-          className="w-full h-64 object-cover rounded-lg mb-4"
+          className="w-full h-64 sm:h-80 md:h-[28rem] object-cover rounded-lg mb-6"
         />
 
-        {/* Product Info */}
-        <h2 className="text-xl font-bold text-center mb-2">{product.name}</h2>
-        <p className="text-center text-gray-700">الوزن: {product.weight}</p>
-        <p className="text-center text-gray-700">العيار: {product.karat}</p>
+        {/* Product Details */}
+        <h2 className="text-xl sm:text-2xl font-bold text-center mb-4">
+          {product.name}
+        </h2>
+        <p className="text-center text-gray-700 text-base sm:text-lg mb-2">
+          الوزن: {product.weight}
+        </p>
+        <p className="text-center text-gray-700 text-base sm:text-lg">
+          العيار: {product.karat}
+        </p>
       </div>
     </div>
   );
